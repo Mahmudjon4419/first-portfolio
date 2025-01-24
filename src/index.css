@@ -1,0 +1,1361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red;    */
+}
+
+body{
+    background-color: rgba(255, 255, 255, 0.158);
+}
+
+.First {
+    width: 100%;
+    font-family: Fira Sans;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.2);
+    /* Oq rang va shaffoflik */
+}
+
+.nav_list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    padding: 0 20px;
+}
+
+.bar {
+    width: 37px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.logo {
+    font-size: 22px;
+    color: #AA8453;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.nav_itemParent {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.nav_list li {
+    list-style: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.nav_list li a {
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav_list li:nth-child(1) a:hover {
+    color: #fff;
+    transition: all 0.4s ease-in;
+    background-color: #AA8453;
+}
+
+.First_container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    color: #000;
+}
+
+.navTwo {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    align-items: center;
+    gap: 2em;
+}
+
+.nawTwo_child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nawTwo_child a {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.nawTwo_child a:hover {
+    color: unset;
+    transition: all 0.4s ease-in;
+    background-color: unset;
+}
+
+.appJsx {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainParent {
+    width: 100%;
+}
+
+.mainChild {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 5rem 15px;
+    gap: 1.5rem;
+}
+
+.mainChild h3 {
+    max-width: 544px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #AA8453;
+    letter-spacing: 2px;
+    line-height: 16.8px;
+    text-transform: uppercase;
+}
+
+.mainChild h1 {
+    max-width: 561px;
+    width: 100%;
+    line-height: 49.5px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.mainChild p {
+    max-width: 492px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    line-height: 21px;
+}
+
+.mainChild a {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 60px;
+    background-color: #AA8453;
+    text-decoration: none;
+}
+
+
+.navRasm {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.nawOne {
+    display: flex;
+    width: 100%;
+}
+
+.nav--open {
+    transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Navbar END */
+
+/* Three jsx Start */
+
+.three {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; Flex gap ishlatiladi */
+    /* justify-content: space-between; Elementlar orasidagi masofani boshqarish */
+}
+
+.threeChildOne {
+    flex: 0 0 316.5px;
+    /* 3 ta ustun */
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    /* Kontentni oxiriga joylashtirish */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.threeChildOne a {
+    color: #fff;
+    margin-bottom: 1em;
+    /* Elementlar orasidagi masofa */
+    text-decoration: none;
+    /* Linklar uchun chiziqni olib tashlash */
+}
+
+
+.threeChildOne a:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Three jsx END */
+
+
+
+/* Four jsx START */
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    margin: 4rem auto;
+}
+
+.product-card {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    font-size: 14px;
+    color: #000;
+    font-weight: 300;
+    transition: all 0.4s ease-in;
+}
+
+
+.product-card h1 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.4s ease-in;
+}
+
+.priceInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.old-price {
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    margin-right: 1rem;
+    text-decoration: line-through;
+}
+
+.current-price {
+    font-size: 22px;
+    font-weight: 400;
+    transition: all 0.4s ease-in;
+}
+
+
+.productTitle {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    white-space: wrap;
+}
+
+.product-card:hover h1,
+.product-card:hover h3,
+.product-card:hover .current-price {
+    color: rgba(170, 132, 83, 1);
+}
+
+.product-card img {
+    display: flex;
+    width: 100%;
+    max-height: 200px;
+    height: auto;
+    object-fit: contain;
+    /* Rasmni joylashtirish */
+}
+
+.new-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff5252;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    cursor: pointer;
+    border-color: #fff;
+}
+
+.like-button {
+    border: none;
+}
+
+.like-icon.liked {
+    color: #ff5252;
+    /* Bosilgan holatda chegara qizil rangga o'zgaradi */
+}
+
+.buy-button {
+    height: auto;
+    background: #c8a165;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .product-card img {
+        max-height: 150px;
+        /* Rasmning balandligini kichraytirish */
+    }
+
+    .product-card {
+        padding: 5px;
+    }
+
+    .buy-button {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+
+    .product-card h3 {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content h3 {
+    margin-bottom: 10px;
+}
+
+.modal-content button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #c8a165;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        height: 320px !important;
+    }
+
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.custom-nav-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #AA8453;
+    background-color: #fff;
+    border: 0.1px solid #00000065;
+    cursor: pointer;
+}
+
+.custom-nav-button:hover {
+    background-color: #AA8453;
+    color: #fff;
+    transition: all 0.4s ease-in;
+}
+
+.slider-description-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-title {
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.slider-description {
+    max-width: 769px;
+    width: 100%;
+}
+
+
+
+/* Four jsx END */
+
+/* Five jsx START */
+
+.fiveContainer{
+    width: 100%;
+    height: 300px;
+}
+
+.fiveTitle{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fiveTitle h1{
+    font-size: 45px;
+    font-weight: 300;
+    max-width: 519px;
+    width: 100%;
+    line-height: 49.5px;
+    color: #000;
+}
+
+.fiveTitle a {
+    display: inline-block;
+    padding: 15px 60px; 
+    background-color: #AA8453; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    text-decoration: none; 
+    /* margin-top: 1rem;  */
+    text-align: center; 
+}
+
+
+
+/* Five jsx END */
+
+/* Six jsx START */
+
+.sixContainer{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.sixChild{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.logo-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* Six jsx END */
+
+
+
+/* Seven jsx STAR */
+
+.sevenContainer{
+    width: 90%;
+    margin: 2em auto;
+}
+
+.sevenContainer h1{
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+.productCard{
+    border: 1px solid #888;
+    border-radius: 5px;
+    min-height: 320px;
+    transition: transform 0.3s ease-in;
+}
+
+.productCard img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    line-height: 19.6px;
+}
+
+.productChild {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.productTitle{
+    /* gap: 0.5em; */
+    transition: all 0.4s ease-in;
+}
+
+.productTitle span{
+    font-size: 14px;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    /* line-height: 19.6px; */
+}
+
+.productCard:hover{
+    transform: scale(1.05);
+}
+
+.productCard:hover .productTitle{
+    color: #AA8453;
+}
+
+
+/* Seven jsx END */
+
+
+/* Eight jsx START */
+.eightContainer {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.eightContainer h1 {
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+.boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.boxChild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 340px;
+    width: 100%;
+    min-height: 250px;
+    color: #AA8453;
+    border: 1px solid #AA8453;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boxChild:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.boxChild h1 {
+    font-size: 56px;
+    font-weight: 500;
+    align-items: end;
+    text-align: center;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0.5rem;
+}
+
+.boxChild h1 span {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.boxChild span {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .eightContainer h1 {
+        font-size: 38px;
+    }
+
+    .boxChild h1 {
+        font-size: 48px;
+    }
+
+    .boxChild h1 span{
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .eightContainer h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .boxChild {
+        min-height: 200px;
+    }
+
+    .boxChild h1 {
+        font-size: 40px;
+    }
+
+    .boxChild h1 span {
+        font-size: 16px;
+    }
+
+    .boxChild h1 span{
+        padding-bottom: 11px;
+    }
+
+    .boxChild span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eightContainer h1 {
+        font-size: 28px;
+    }
+
+    .boxChild {
+        min-height: 180px;
+        padding: 0.5rem;
+    }
+
+    .boxChild h1 span{
+        padding-bottom: 10px;
+    }
+
+    .boxChild h1 {
+        font-size: 32px;
+    }
+
+    .boxChild h1 span {
+        font-size: 14px;
+    }
+
+    .boxChild span {
+        font-size: 12px;
+    }
+}
+
+
+/* Eight jsx END */
+
+
+/* Nine jsx START */
+
+.nineContainer{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.nineChild{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nineInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+}
+
+.nineInfo h1{
+    font-size: 45px;
+    line-height: 45.9px;
+    /* letter-spacing: 16.9px; */
+    font-weight: 300;
+}
+
+.nineInfo a{    
+    display: inline-block;
+    padding: 15px 30px; 
+    background-color: #AA8453; 
+    color: #fff; 
+    border: none; 
+    cursor: pointer; 
+    text-decoration: none; 
+    /* margin-top: 1rem;  */
+    text-align: center; 
+}
+
+.nineInfo p{
+    max-width: 538px;
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.managerInfo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.managerInfoChild{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.managerInfoChild h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.managerInfoChild span{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    .nineInfo h1{
+        font-size: 38px;
+        line-height: 38.9px;
+    }
+
+    .nineInfo a{
+        padding: 15px 20px;
+    }
+
+    .nineInfo p{
+        font-size: 12px;
+    }
+
+    .managerInfoChild h3{
+        font-size: 18px;
+    }
+
+    .managerInfoChild span{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .nineInfo h1{
+        font-size: 38px;
+        line-height: 38.9px;
+    }
+
+    .nineInfo a{
+        padding: 15px 20px;
+    }
+
+    .nineInfo p{
+        font-size: 12px;
+    }
+
+    .managerInfoChild h3{
+        font-size: 18px;
+    }
+
+    .managerInfoChild span{
+        font-size: 12px;
+    }
+
+    .nineChild{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .nineInfo{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nineContainer{
+        padding: 1rem 0;
+    }
+
+
+    .nineInfo h1{
+        font-size: 32px;
+        line-height: 32.9px;
+    }
+
+    .nineInfo a{
+        padding: 10px 10px;
+    }
+
+    .nineInfo p{
+        font-size: 10px;
+    }
+
+    .managerInfoChild h3{
+        font-size: 16px;
+    }
+
+    .managerInfoChild span{
+        font-size: 10px;
+    }
+    
+}
+
+/* Nine jsx END */
+
+
+/* Ten jsx START */
+
+/* Container Styles */
+.tenContainer {
+    padding: 2rem 0;
+}
+
+/* Child layout */
+.tenChild {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+/* Contact Information Section */
+.tenInfo {
+    /* flex: 1 1 300px; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tenInfo h1 {
+    color: #AA8453;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.infoOne, .infoTwo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.infoOne h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.infoOne span, .infoTwo span {
+    font-size: 12px;
+    color: #BDBDBD;
+    font-weight: 300;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoContainer a {
+    font-size: 32px;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+    color: #AA8453;
+}
+
+.logoContainer a:hover {
+    color: #888;
+}
+
+/* Product Sections */
+.tenParent {
+    flex: 2 1 600px; /* Responsive flex rule */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.tenBox {
+    flex: 1 1 calc(33% - 2rem); /* Responsive three-column layout */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tenBox h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.tenBoxChild {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tenBoxChild a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    transition: all 0.4s ease-in;
+}
+
+.tenBoxChild a:hover {
+    color: #AA8453;
+}
+
+/* Responsive Adjustments */
+/* Responsive Adjustments */
+
+/* 1024px va pastrog'i uchun */
+
+@media (max-width: 1024px) {
+    .tenChild {
+        gap: 1.5rem;
+        flex-wrap: wrap; /* Kontent joylashuvi bilan moslashadi */
+        justify-content: center; /* Markazlash */
+    }
+
+    .tenParent {
+        justify-content: center;
+        gap: 1.5rem; /* Bo'limlar orasida bo'sh joy */
+    }
+
+    .tenBox {
+        flex: 1 1 calc(45% - 1rem); /* 45% kenglik va minimal masofa */
+        max-width: 45%;
+        text-align: center; /* Matnni markazlashtirish */
+    }
+
+    .tenInfo {
+        align-items: center;
+    }
+
+    .tenInfo * {
+        align-items: center;
+    }
+}
+
+/* 768px va pastrog'i uchun */
+@media (max-width: 768px) {
+    .tenChild {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .tenBox {
+        flex: 1 1 100%; /* Har bir elementni 100% kenglikka tushirish */
+        max-width: 100%; /* Maksimal kenglikni chegaralang */
+        text-align: center;
+    }
+}
+
+
+/* 480px va pastrog'i uchun */
+@media (max-width: 480px) {
+    .tenContainer {
+        padding: 1rem 0; /* Ichki bo'shliqni kamaytirish */
+    }
+
+    .tenChild {
+        flex-direction: column; /* Hammasi ustma-ust chiqadi */
+        /* gap: 1rem; Qismlar orasida masofa */
+        gap: 0rem;
+    }
+
+    .tenInfo {
+        width: 100%; /* To'liq kenglikni egallaydi */
+        align-items: center;
+        text-align: center; /* Matnni markazlash */
+    }
+
+    .infoContainer {
+        gap: 0.5rem; /* Ichki bo'shliqni kamaytirish */
+    }
+
+    .infoOne h3 {
+        font-size: 14px; /* Sarlavha o'lchamini kamaytirish */
+    }
+
+    .infoOne span {
+        font-size: 10px; /* Qo'shimcha matn o'lchamini moslashtirish */
+    }
+
+    .infoTwo span {
+        font-size: 10px;
+    }
+
+    .logoContainer {
+        gap: 0.5rem;
+    }
+
+    .logoContainer a {
+        font-size: 20px; /* Ijtimoiy ikonlarni kichraytirish */
+    }
+
+    .tenParent {
+        /* flex-direction: column; Har bir bo'lim ustma-ust chiqadi */
+        align-items: center; /* Markazlash */
+        gap: 1rem; /* Oradagi bo'shliqni sozlash */
+        padding: 0 0.5rem; /* Yon tomondan minimal bo'sh joy */
+    }
+
+    .tenBox {
+        /* Har bir bo'lim to'liq kenglikni egallaydi */
+        text-align: center;
+        padding: 1rem 0;
+        flex: 1 1 calc(80% - 1rem);
+    }
+
+    .tenBox h1 {
+        font-size: 16px; /* Sarlavha o'lchamini kichraytirish */
+    }
+
+    .tenBoxChild a {
+        font-size: 12px; /* Linklar o'lchamini kichraytirish */
+        line-height: 1.5; /* Matnni yaxshiroq o'qilishi uchun */
+    }
+}
+
+
+
+/* Ten jsx END */
+
+
+/* Footer jsx START */
+
+.footerContainer{
+    background-color: #AA8453;
+    padding: 15px 0;
+}
+
+.footer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer span{
+    font-size: 12px;
+    font-weight: 3000;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .footer {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer span {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerContainer {
+        padding: 10px 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .footer span {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContainer {
+        padding: 8px 0;
+    }
+
+    .footer {
+        gap: 0.3rem;
+    }
+
+    .footer span {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+}
+
+/* Footer jsx END */
+
+
+@media (max-width: 1378px) {
+    .nav_list {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0 25px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        transition: all 0.5s ease-in-out;
+        z-index: 1000;
+        /* background-color: #000; */
+        transform: translateX(-100%);
+    }
+
+    .nav_itemParent {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .navTwo {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .threeChildOne {
+        flex: 1 1 calc(33.333% - 20px);
+        /* Kichik ekranlarda 3 ta ustun */
+    }
+}
+
+@media (min-width: 1378px) {
+    .threeChildOne {
+        flex: 1 1 calc(316.5px - 20px);
+        /* Kichik ekranlarda 2 ta ustun */
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-description, .slider-title{
+        text-align: center;
+    }
+
+    .sliderContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+   
+
+    .slider-description-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .threeChildOne {
+        flex: 1 1 calc(50% - 20px);
+        /* Kichik ekranlarda 2 ta ustun */
+    }
+
+    .mainChild {
+        justify-content: center;
+        padding-top: 2rem;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .mainChild a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navRasm {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .fiveTitle h1{
+        text-align: center;
+    }
+
+    .fiveTitle a{
+        width: 100%;
+    }
+
+    .mainChild h1{
+        line-height: 1.2;
+    }
+
+
+    .threeChildOne {
+        flex: 1 1 calc(100% - 20px);
+        /* Kichik ekranlarda 1 ta ustun */
+    }
+
+    .mainChild h1 {
+        font-size: 30px;
+    }
+
+    .mainChild h3 {
+        font-size: 10px;
+    }
+
+    .mainChild p {
+        font-size: 12px;
+    }
+
+    .mainChild a {
+        padding: 10px 40px;
+    }
+}
+
+@media (max-width: 471px) {
+    .slider-title{
+        line-height: 1;
+    }
+}
