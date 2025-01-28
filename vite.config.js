@@ -1,11 +1,8 @@
+import { vitePlugin as remix } from "@remix-run/dev";
+import { defineConfig } from "vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
+
 export default defineConfig({
-  base: './', // Static fayllarni to‘g‘ri yuklash uchun
-  build: {
-    outDir: 'dist', // Netlify 'dist' papkasini ishlatishi kerak
-  },
-  server: {
-    headers: {
-      'Content-Type': 'application/javascript',
-    },
-  },
+  plugins: [remix(), netlifyPlugin(), tsconfigPaths()],
 });
